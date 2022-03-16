@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.controls-wrapper{
+    background: rgb(140, 155, 103);
+    padding:2rem;
+
+}
+.controls{
+    display: grid;
+    grid-gap: 1rem;
+ 
+}
+.toggleSound{
+    background: rgb(140, 155, 103);
+    border: none;
+    color: black;
+    padding: 1rem;
+    border: .2rem solid rgb(83, 83, 83);
+    border-radius: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+#display{
+    width: 15em;
+    background: rgb(140, 155, 103);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+#volume{
+    text-align: center;
+    padding: 1rem;
+}
+#slider{
+    background: black;
+    height: 2px;
+    -webkit-appearance: none;
+    outline: none;
+}
+#slider::-webkit-slider-thumb{
+    background: rgb(83, 83, 83);
+    width: 6px;
+    height: 15px;
+    z-index: 3;
+    position: relative;
+    -webkit-appearance:none;
+    color: rgb(140, 155, 103)
+}
+
+.powerButton {
+    background: rgb(140, 155, 103);
+    font-weight :bold;
+    width: 5rem;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 5rem;
+    border: .2rem solid rgb(83, 83, 83);
+    border-radius: 0 15px;
+    outline: none;
+ 
+}
+@media (max-width: 360px) {
+    .controls-wrapper{
+        background: rgb(140, 155, 103);
+        padding:2rem 1rem;
+    
+    }
+
+}
